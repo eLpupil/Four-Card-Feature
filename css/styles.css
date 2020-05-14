@@ -1,0 +1,119 @@
+
+/* HTML Elements */
+
+body{
+  padding: 3% 5% 1%;
+  background-color: hsl(0, 0%, 98%);
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+p{
+  color: hsl(229, 6%, 66%);
+}
+
+
+/* Title Section*/
+
+#title{
+  padding: 0 35%;
+}
+
+.title-adjectives{
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+.title-slogan{
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+
+
+/* Features Section */
+
+.feature-div{
+  display: inline-block;
+  width: 25%;
+}
+
+.card{
+  border-top-style: solid;
+  border-top-width: thick;
+  border-radius: 2%;
+  margin: 5%;
+  box-shadow: 0 10px 15px #A3A5AE;
+}
+
+.side-div{
+  position: relative;
+  bottom: 150px;
+  /* margin: 0; */
+}
+
+
+
+/* Banners */
+
+.supervisor{
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+.team-builder{
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.karma{
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+.calculator{
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+
+
+/* card text */
+
+.card h3 {
+  padding: 5% 7% 0;
+  text-align: left;
+}
+
+.card p{
+  padding: 0 7%;
+  text-align: left;
+}
+
+.feature-icon{
+  margin: 7%;
+  width: 25%;
+  margin-left: 60%;
+}
+
+
+
+@media (max-width: 900px) {
+  .feature-div{
+    display: block;
+    width: 100%;
+  }
+
+  .card{
+    position: static;
+  }
+}
+
+
+/* Footer */
+
+.attribution { font-size: 11px;}
+
+.attribution a { color: hsl(228, 45%, 44%); }
