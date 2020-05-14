@@ -14,9 +14,18 @@ h1{
   font-size: 2rem;
 }
 
+h3{
+  text-align: left;
+  padding: 2% 5% 0;
+  color: hsl(234, 12%, 34%);
+  font-size: 1.5rem;
+}
+
 p{
   color: hsl(229, 6%, 66%);
+  line-height: 1;
 }
+
 
 
 /* Title Section*/
@@ -39,75 +48,70 @@ p{
 
 /* Features Section */
 
-.feature-div{
-  display: inline-block;
-  width: 25%;
+.wrapper{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 .card{
   border-top-style: solid;
   border-top-width: thick;
   border-radius: 2%;
-  margin: 5%;
+  margin: 3%;
   box-shadow: 0 10px 15px #A3A5AE;
 }
 
-.side-div{
-  position: relative;
-  bottom: 150px;
-  /* margin: 0; */
-}
 
-
-
-/* Banners */
-
-.supervisor{
+.left-card{
   border-top-color: hsl(180, 62%, 55%);
+  grid-column: 1;
+  grid-row: 2/4;
 }
 
-.team-builder{
+.top-card{
   border-top-color: hsl(0, 78%, 62%);
+  grid-column: 2;
+  grid-row: 1/3;
 }
 
-.karma{
+.bottom-card{
   border-top-color: hsl(34, 97%, 64%);
+  grid-column: 2;
+  grid-row: 3/5;
 }
 
-.calculator{
+.right-card{
   border-top-color: hsl(212, 86%, 64%);
+  grid-column: 3;
+  grid-row: 2/4;
 }
 
 
 
 /* card text */
 
-.card h3 {
-  padding: 5% 7% 0;
-  text-align: left;
-}
-
 .card p{
-  padding: 0 7%;
+  padding: 0 5%;
   text-align: left;
 }
 
 .feature-icon{
   margin: 7%;
-  width: 25%;
-  margin-left: 60%;
+  width: 15%;
+  margin-left: 70%;
 }
 
 
 
-@media (max-width: 900px) {
-  .feature-div{
-    display: block;
+@media (max-width: 750px) {
+  #title{
     width: 100%;
+    padding: 0;
   }
 
-  .card{
-    position: static;
+  .wrapper{
+    display: block;
   }
 }
 
